@@ -136,11 +136,8 @@ header {
     font-size: 6rem;
     border-bottom: 1px solid red;
     padding-bottom: 1.5rem;
-    color: transparent;
-    display: inline-block;
-    background-image: linear-gradient(to right, red 80%, #ffa);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: red;
+
     text-align: center;
     font-weight: 500;
     margin: 2rem 0;
