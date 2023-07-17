@@ -1,0 +1,231 @@
+:root {
+    --primary-color: rgb(37, 35, 100);
+}
+
+@font-face {
+    font-family: 'Elephant';
+    src: url('./img/ELEPHNT.TTF') format('ttf'),
+        url('./img/ELEPHNTI.TTF') format('ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Elephant', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-size: 2rem;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff, var(--primary-color));
+}
+
+/* //////////////////////////////////
+//NAVBAR */
+header {
+    border-bottom: 1px solid var(--primary-color);
+    height: 8rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    transition: all 0.3s ease;
+}
+
+.header-left {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1.5rem;
+    margin-right: 5rem;
+}
+
+.lang-switch {
+    display: flex;
+    height: 100%;
+
+}
+
+.lang-switch a,
+.lang-switch a:link,
+.lang-switch a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 2rem .5rem;
+}
+
+.lang-switch a:hover {
+    background-color: rgba(37, 35, 100, 0.466);
+    transform: scale(1.05);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation a,
+.navigation a:link,
+.navigation a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+.navigation a:hover {
+    background-color: rgba(37, 35, 100, 0.466);
+    transform: scale(1.05);
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* //////////////////////////////////
+//MAIN*/
+
+
+.container {
+    position: relative;
+    width: 90%;
+
+    height: 100%;
+    margin: 0 auto;
+    background-image: url('./img/Picture_1.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.big-logo img {
+    width: 50rem;
+    height: 20rem;
+}
+
+
+.title {
+    font-size: 6rem;
+    border-bottom: 1px solid red;
+    padding-bottom: 1.5rem;
+    color: transparent;
+    display: inline-block;
+    background-image: linear-gradient(to right, red 80%, #ffa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+.contact {
+    padding: 2rem;
+    box-shadow: 1rem .5rem 5rem #ffffff6c;
+    background-color: rgba(200, 200, 200, .7);
+    border-radius: 10px;
+
+}
+
+.emails {
+    list-style: none;
+    text-align: center;
+    line-height: 4rem;
+    color: var(--primary-color);
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}
+
+
+.email a,
+.email a:link,
+.email a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1rem;
+    transition: all .3s ease-out;
+}
+
+.email a:hover {
+    transform: scale(1.1);
+    color: rgba(37, 35, 100, .8);
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 2rem; */
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #fff;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    html {
+        font-size: 45%;
+    }
+    .container {
+        width: 95%;
+        background-size: cover;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 35%;
+    }
+
+    body {
+        min-height: 100vh;
+        font-size: 1rem;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+        background-size: cover;
+    }
+
+    .navigation {
+        padding: 2rem 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+}
